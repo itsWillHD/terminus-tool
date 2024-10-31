@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINUS PUZZEL BY ITSWILLHD</title>
+    <style>
+        /* Basic styling */
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 400px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            border: 1px solid #ddd; 
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+        h1 { text-align: center; color: #333; }
+        .image-container { 
+            display: flex; 
+            justify-content: space-around; 
+            margin: 10px 0; 
+        }
+        h2 { text-align: center; color: #333; }
+        .image-container { 
+            display: flex; 
+            justify-content: space-around; 
+            margin: 10px 0; 
+        }
+        img { 
+            cursor: pointer; 
+            width: 60px; 
+            height: 60px; 
+            border: 2px solid transparent; 
+            border-radius: 5px; 
+        }
+        img.selected { 
+            border-color: #0066cc; 
+        }
+        .result { margin-top: 20px; font-size: 18px; color: #0066cc; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>TERMINUS PUZZEL</h1>
+    <h2>MADE BY: ITSWILLHD</h2>
+    <p>KIES JUISTE LOGO DIE HOREN BIJ: <strong>X</strong>, <strong>Y</strong>, en <strong>Z</strong>:</p>
+    
+    <div>
+        <h3>X</h3>
+        <div class="image-container">
+            <img src="image1.png" alt="1" onclick="selectNumber('x', 'image1.png')">
+            <img src="image2.png" alt="2" onclick="selectNumber('x', 'image2.png')">
+            <img src="image3.png" alt="3" onclick="selectNumber('x', 'image3.png')">
+            <img src="image4.png" alt="4" onclick="selectNumber('x', 'image4.png')">
+            <img src="image5.png" alt="5" onclick="selectNumber('x', 'image5.png')">
+            <img src="image6.png" alt="6" onclick="selectNumber('x', 'image6.png')">
+        </div>
+    </div>
+
+    <div>
+        <h3>Y</h3>
+        <div class="image-container">
+            <img src="image1.png" alt="1" onclick="selectNumber('y', 'image1.png')">
+            <img src="image2.png" alt="2" onclick="selectNumber('y', 'image2.png')">
+            <img src="image3.png" alt="3" onclick="selectNumber('y', 'image3.png')">
+            <img src="image4.png" alt="4" onclick="selectNumber('y', 'image4.png')">
+            <img src="image5.png" alt="5" onclick="selectNumber('y', 'image5.png')">
+            <img src="image6.png" alt="6" onclick="selectNumber('y', 'image6.png')">
+        </div>
+    </div>
+
+    <div>
+        <h3>Z</h3>
+        <div class="image-container">
+            <img src="image1.png" alt="1" onclick="selectNumber('z', 'image1.png')">
+            <img src="image2.png" alt="2" onclick="selectNumber('z', 'image2.png')">
+            <img src="image3.png" alt="3" onclick="selectNumber('z', 'image3.png')">
+            <img src="image4.png" alt="4" onclick="selectNumber('z', 'image4.png')">
+            <img src="image5.png" alt="5" onclick="selectNumber('z', 'image5.png')">
+            <img src="image6.png" alt="6" onclick="selectNumber('z', 'image6.png')">
+        </div>
+    </div>
+
+    <div class="result" id="results">
+        <p>X: <span id="result1">0</span></p>
+        <p>Y: <span id="result2">0</span></p>
+        <p>Z: <span id="result3">0</span></p>
+    </div>
+
+    <script src="algebra_tool.js"></script>
+</body>
+</html>
